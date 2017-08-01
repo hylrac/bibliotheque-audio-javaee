@@ -5,6 +5,8 @@
 	                    http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 	<persistence-unit name="Bibliotheque" transaction-type="JTA">
 		<jta-data-source>BibliothequeDS</jta-data-source>
+		<class>fr.sopra.pox3.entities.Auteur</class>
+		<class>fr.sopra.pox3.entities.MaisonDeDisque</class>
 
 		<properties>
 			<!-- validate, update, create, create-drop -->
