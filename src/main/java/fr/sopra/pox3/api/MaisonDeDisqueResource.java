@@ -67,7 +67,7 @@ public class MaisonDeDisqueResource {
 	
 	@DELETE
 	@Path ("/{id}")
-	public void deleteMaisonDeDisque (@PathParam("id") int id) {
+	public void deleteMaisonDeDisque (@PathParam("id") int id) throws Exception {
 		MaisonDeDisque maison = maisonDAO.findById(id);
 		if (maison != null) {
 			maisonDAO.deleteMaisonDeDisque(maison);

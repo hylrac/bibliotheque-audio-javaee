@@ -71,7 +71,7 @@ public class AuteurResource {
 
 	@DELETE
 	@Path("/{id}")
-	public void deleteAuteur(@PathParam("id") int id) {
+	public void deleteAuteur(@PathParam("id") int id) throws Exception {
 		MaisonDeDisque maison = maisonDAO.findById(id);
 		if (maison != null) {
 			maisonDAO.deleteMaisonDeDisque(maison);
